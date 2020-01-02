@@ -1,6 +1,6 @@
 
 presetup to run project:
-    * Setup Python 2.7.17 locally 
+    * Setup Python 2.7.17 locally. Download it from https://www.python.org/downloads/release/python-2717/
     * install python by clicking on python-2.7.17.amd64.msi file. Follow the steps to complete the installation
     * Install pip 
     * Install virtual environment using the following command 
