@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza list</title>
+
+</head>
+
+<body>
+
+	<h3>Indian Time Zone: {{time_zone}}</h3>
+	<h4>***********************</h4>
+
+	<table >
+		<tr>
+	 		<td> 
+                {% load tz %}
+                {% get_current_timezone as tz %}
+                {% timezone tz %}
+                    {{ message.log_date | time:'H:i:s' }}
+                {% endtimezone %} 
+            </td>
+        </tr>
+    </table>
+
+	<table style="width:40%">
+		  {% for pizza in all_pizza %}
+		    <tr>
+		      <td><p><b><b> pizza name: </b></b>{{pizza.pizza_name}}</p></td>
+		      <td><p><b><b>price:</b></b>{{pizza.price}}</p></td>
+		      <td><p><b><b>pizza type:</b></b>{{pizza.pizza_type}}</p></td>
+		    </tr>
+		  {% endfor %}
+	</table>
+
+	
+	<h4>***********************</h4>
+	<p><b>total sold pizzas:</b> {{total_sold_pizzas}}</p>
+	<p><b>total sold amount of pizzas:</b> {{total_sold_amount.total_sold_amount}}</p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+venv/
+node_modules/
+*.sqlite3
+*.pyc
+staticdist/
+__pycache__/
+migrations/
+.vscode
+__init__.py
