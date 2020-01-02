@@ -6,4 +6,3 @@ staticdist/
 __pycache__/
 migrations/
 .vscode
-__init__.py
